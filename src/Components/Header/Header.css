@@ -13,29 +13,10 @@
   align-items: center;
 }
 
-.placeSearch {
-  width: 16em;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  padding: 0 8px;
-  border: 2px solid #002f34;
-  border-radius: 4px;
-  background-color: white;
-}
 
-.placeSearch ::selection {
-  border-color: #23e5db;
-  outline-color: #23e5db;
-}
-
-.placeSearch input {
-  border-color: transparent;
-  outline-color: transparent;
-}
 
 .productSearch {
-  width: 35em;
+  width: 30em;
   height: 48px;
   border: 2px solid #002f34;
   border-radius: 4px;
@@ -147,18 +128,34 @@
   letter-spacing: 0.5px;
   color: #002f34;
 }
-
-/* .sellMenu .sellMenuContent svg {
-  align-items: center;
-} */
 .sellMenu .sellMenuContent span {
   margin-left: 5px;
 }
 
+/* .sellMenu .sellMenuContent svg {
+  align-items: center;
+} */
+
+.logOut span{
+  font-weight: bold;
+  
+}
+
 @media only screen and (max-width: 700px) {
-  .placeSearch,
-  .productSearch,
-  .sellMenu {
+ 
+  .logOut, 
+  .sellMenu,.language{
     display: none;
   }
-}
+  .productSearch {
+  width: 14rem;
+  height: 38px;
+  background-color: red;
+  }
+  .productSearch .searchAction {
+  min-width: 30px;
+  height: 35px;}
+  .brandName{
+    margin-right: 12px;
+  }
+} 

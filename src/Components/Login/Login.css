@@ -14,6 +14,7 @@
     border-left-color: transparent;
     border-right-color: transparent;
     outline-color: transparent;
+    
   }
   
   .loginParentDiv button {
@@ -30,9 +31,12 @@
     border: 2px solid #002f34;
   }
   
-  .loginParentDiv a {
+  .loginParentDiv h6 {
+    margin: 5px;
     display: flex;
     justify-content: center;
     cursor: pointer;
   }
-  
+  .closeButton{
+    margin-left: 12rem;
+  }

@@ -1,0 +1,48 @@
+.chat-head{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 4em;
+  width: 100%;
+}
+.chat-head .left{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 5px;
+  font-size: .7rem;
+}
+.second{
+margin:0px 15px;
+}
+.second span{
+  font-size: 1.5rem;
+}
+.chat-head .right{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 10px;
+  font-size: .7rem;
+} 
+.chat-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+  height: 4vh;
+}
+.chat-card .first{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  padding: 0 10px;
+}
+.chat-card .first span{
+  font-size: 1.2rem;
+  font-weight: 400;
+}

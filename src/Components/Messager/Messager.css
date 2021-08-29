@@ -1,0 +1,108 @@
+.messager-body{
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5px;
+  height: 5vh;
+  width: 100%;
+  background-color: white;
+  
+}
+.header .first{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.header .second{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+.chat-window{
+  margin-top: 4rem;
+  padding: 4rem .5rem;
+ 
+  }
+  .message{
+    display: flex;
+    align-items: center;
+  }
+.message p{
+  max-width: 500px;
+  display:block;
+  width:170px;
+  word-wrap:break-word;
+  margin-bottom: 20px;
+  line-height: 34px;
+  padding:0 20px;
+  background-color: red;
+}
+.send{
+  justify-content: flex-end;
+}
+.send p{
+  background-color: rgb(206,221,255);
+  border-radius: 15px;
+}
+.received p{
+  background-color: rgb(204,213,214);
+  border-radius: 15px;
+}
+
+form{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7vh;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+form input{
+  width:80%;
+  height: 7vh;
+  padding: 0 5vh;
+  overflow-y: scroll;
+  outline: none;
+  border: none;
+  
+}
+form i{
+  width:4vh;
+  height: 4vh;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  padding: 1vh 0;
+  font-size: 2.5em;
+}
+form button{
+  width:5vh;
+  height: 5vh;
+  margin: 1vh 0;
+  background-color: white;
+  border:none;
+  outline: none;
+}
+button:hover, button:focus {
+  outline: none;
+  border: none;
+  
+}
+@media only screen and (max-width :700px){
+  form i{
+    font-size:1em;
+  }
+}

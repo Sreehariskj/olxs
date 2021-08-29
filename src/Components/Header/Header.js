@@ -1,24 +1,41 @@
-import React from 'react';
-
+import React,{useContext} from 'react';
+import {AuthContext,FirebaseContext} from '../../store/FirebaseContext'
+import {useHistory} from 'react-router-dom'
 import './Header.css';
 import OlxLogo from '../../assets/OlxLogo';
 import Search from '../../assets/Search';
 import Arrow from '../../assets/Arrow';
+import Menu from '../../assets/Menu';
 import SellButton from '../../assets/SellButton';
 import SellButtonPlus from '../../assets/SellButtonPlus';
+
 function Header() {
+  const {user} =useContext(AuthContext)
+  const {firebase} =useContext(FirebaseContext)
+  const history= useHistory()
+  const onSellClick =()=>{
+    if(user){
+      history.push('/create')
+    }else{
+      history.push('/login')
+    }
+  }
+  const changePage=()=>{
+    history.push('/.')
+  }
   return (
     <div className="headerParentDiv">
       <div className="headerChildDiv">
-        <div className="brandName">
+      <div onClick={changePage} className="navbar">
+      
+        <div className="first-section">
+          <Menu></Menu>{"    "}
           <OlxLogo></OlxLogo>
+          </div>
         </div>
-        <div className="placeSearch">
-          <Search></Search>
-          <input type="text" />
-          <Arrow></Arrow>
-        </div>
-        <div className="productSearch">
+       
+        <div onClick={()=>
+        history.push('/search')} className="productSearch">
           <div className="input">
             <input
               type="text"
@@ -33,21 +50,23 @@ function Header() {
           <span> ENGLISH </span>
           <Arrow></Arrow>
         </div>
-        <div className="loginPage">
-          <span>Login</span>
-          <hr />
-        </div>
-
-        <div className="sellMenu">
+       <div className="logOut">
+          {user && <span onClick={()=>{
+            firebase.auth().signOut()
+            history.push('/')
+          }}>LogOut</span>} </div>
+       <div onClick={onSellClick} className="sellMenu">
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
             <span>SELL</span>
           </div>
-        </div>
+        </div> 
+        
       </div>
     </div>
   );
 }
 
 export default Header;
+ 

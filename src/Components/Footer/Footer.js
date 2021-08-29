@@ -32,7 +32,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div>
+        <div className="enquiry">
           <div className="heading">
             <p>OLX</p>
           </div>
@@ -40,13 +40,14 @@ function Footer() {
             <ul>
               <li>Help</li>
               <li>Sitemap</li>
-              <li>Legal & Privacy information</li>
+              <li>Legal & Privacy<br/> information</li>
+              
             </ul>
           </div>
         </div>
       </div>
       <div className="footer">
-        <p>Other Countries Pakistan - South Africa - Indonesia</p>
+        
         <p>Free Classifieds in India. © 2006-2021 OLX</p>
       </div>
     </div>
