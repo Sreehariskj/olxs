@@ -1,4 +1,4 @@
- # MASTER REACT PROJECT <hr>
+ # MASTER REACT PROJECT 
 
  OLX APP LINK : 
  # Features <br>
