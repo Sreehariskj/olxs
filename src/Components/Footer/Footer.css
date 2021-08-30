@@ -7,7 +7,7 @@
   align-items: center;
   background: #ebeeef;
   padding: 16px;
-  
+ 
 }
 .footerParentDiv .content .heading {
   font-size: 24px;
@@ -26,8 +26,16 @@
 .footerParentDiv .footer p {
   margin: 0;
 }
-@media only screen and (max-width: 700px){
+.footerParentDiv .content .list ul{
+ 
+  height: 130px;
+}
+
+@media (max-width: 700px){
   .enquiry{
     display: none;
   }
+  .footerParentDiv .content .heading p{ 
+  font-size: 1.3rem;
+}
 }
