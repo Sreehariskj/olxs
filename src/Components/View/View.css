@@ -12,7 +12,8 @@
 }
 .viewParentDiv .imageShowDiv img {
  
-  width: 26vw;
+  min-width: 26vw;
+  max-width: 85vw;
   height: 190px;
 }
 
