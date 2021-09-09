@@ -5,5 +5,6 @@
   * Responsive Olx clone UI 
   * More User friendely than orginal 
   * Fully functional olx clone app 
- 
+  * Include real-time chat
+
 
