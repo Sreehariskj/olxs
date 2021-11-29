@@ -1,4 +1,4 @@
-.section {
+.adSection {
   margin: 0 16px 24px;
   padding: 86px 16px 32px;
   background-color: #ebeeef;
@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-.heading {
+.adSection .heading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,13 +17,13 @@
 
 
 
-.section .cards {
+.adSection .cards {
   display: flex;
   flex-wrap: wrap;
   
 }
 
-.card {
+.adSection .card {
 
   margin-right: 7px;
   margin-bottom: 10px;
@@ -37,44 +37,44 @@
 
 
 
-.card .image {
+.adSection .card .image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card .image img {
+.adSection .card .image img {
   height: 100px;
   max-width: 100%;
   max-height: 100%;
   min-height: 100%;
   text-align: center;
 }
-.card .content .rate {
+.adSection .card .content .rate {
   margin-top: 10px;
   font-size: larger;
   font-weight: bold;
 }
-.card .content .kilometer {
+.adSection .card .content .kilometer {
   font-size: medium;
 }
-.card .content .name {
+.adSection .card .content .name {
   font-size: small;
 }
-.card .date {
+.adSection .card .date {
   display: flex;
   justify-content: flex-end;
   font-size: small;
 }
 
 @media only screen and (max-width: 700px) {
-  .section{
+  .adSection{
     height: 100%;
   }
-  .section .cards {
+  .adSection .cards {
     justify-content: flex-start;
   }
-  .card {
+   .adSection .card {
   max-width: 139px;
   width: 139px;
   height: 40vh;

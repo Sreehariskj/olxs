@@ -78,7 +78,8 @@
 .moreView .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin: 2rem auto;
  /* white-space: nowrap;*/
   overflow-y: hidden;
 }

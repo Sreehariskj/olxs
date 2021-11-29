@@ -27,7 +27,7 @@ if(user){
  },[user,firebase])
   return (
     <div className="adParentDiv">
-      <div className="section">
+      <div className="adSection">
         <div className="heading">
           <h3>My Ads</h3>
         </div>
